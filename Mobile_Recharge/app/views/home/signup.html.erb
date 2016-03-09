@@ -1,0 +1,35 @@
+<%= form_tag  :action=> 'create1' do %>
+<table>
+	<tr>
+<tr>
+<h2><font color="blue">Sign<font color="sky blue">Up</font></h2gmail.com>
+</tr>	
+<tr>	
+<td>Mobile Number	
+<%= text_field :stu, :mobile %>
+</td>
+</tr>
+<tr>	
+<td>Email(Optional)	
+<%= email_field :stu, :email %>
+</td>
+</tr>
+<tr>
+<td>Paytm Password
+<%= password_field 'stu', 'password' %>
+</td>
+</tr>	
+<tr>
+<td>
+<span style=' checkbox_background-color:skyblue'>
+<input type="checkbox" name="hgd" value="aa">I hereby certify that I am atleast 18 years of age
+</td>
+</tr>	
+<td>
+<%= button_to 'Create Your Paytm Wallet', 'new' ,{:style=>'background-color:skyblue; color:white; width:200px;padding: 6px 20px;'} %>
+<p>By Signing Up You agree to our T&C and Privacy Policy</p>
+</td>
+</tr>
+</table>
+<% end%>
+

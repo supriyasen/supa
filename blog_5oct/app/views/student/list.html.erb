@@ -1,0 +1,35 @@
+
+<%= form_tag :action=> 'create' do %>
+<table>
+<tr>
+<td>STUDENT LIST</td>
+</tr>
+<tr>
+<td>Name</td>	
+<td>
+<%= text_field 'student', 'name' %>
+</td>
+
+<tr>
+<td>Age</td>
+<td>
+<%= text_field 'student', 'age' %>
+</td>
+</tr>	
+
+<tr>
+<td>Mobile</td>
+<td>
+<%= text_field 'student', 'mobile' %>
+</td>	
+</tr>
+
+<tr>
+<td>
+<input name= "operation" type= "submit" value= "save" class= "buttons">
+</td>
+</tr>
+	
+</tr>	
+</table>
+<% end %>

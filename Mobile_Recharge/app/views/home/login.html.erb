@@ -1,0 +1,29 @@
+
+<%= form_tag  :action=> 'create' do %>
+<table>
+<tr>
+<h2><font color="blue">Log<font color="sky blue">In</font></h2>
+</tr>	
+<tr>	
+<td>Enter Your Mobile Or Email
+	<br>
+<%= email_field :st, :email %>
+</td>
+</tr>
+<tr>
+<td>Paytm Password
+	<br>
+<%= password_field 'st', 'password' %>
+<td>
+<%= link_to 'Forgot Password?/Create a new password', 'Forgot Password?/Create a new password'%>
+</td>
+</td>
+</tr>
+<tr>
+<td>
+<%= button_to 'Secure Login', 'new' ,{:style=>'background-color:skyblue; color:white; width:150px;padding: 6px 20px;'} %>
+</td>
+</tr>
+</table>	
+<%end%>
+

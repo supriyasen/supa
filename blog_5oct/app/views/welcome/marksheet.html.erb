@@ -1,0 +1,44 @@
+<%= form_tag :action=> 'create1' do %>
+<table>
+<tr>
+<tr>
+<td>Student Marksheet</td>
+</tr>
+
+<tr>
+<td>Student_id</td>
+<td>
+<%= text_field 'student', 'student_id' %>
+</td>
+</tr>
+
+<tr>
+<td>Hindi_marks</td>
+<td>
+<%= text_field 'student', 'Hindi_marks' %>
+</td>
+</tr>
+
+
+<tr>
+<td>English_marks</td>
+<td>
+<%= text_field 'student', 'English_marks' %>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<input name= "operation" type= "submit" value= "save" class= "buttons">
+</td>
+<td>
+<!-- <input name="operation" type="submit" value="search" class="buttons"> -->
+
+</td>
+</tr>
+
+</tr>
+</table>
+<% end %>
+
